@@ -1,8 +1,3 @@
-// Name: Sheng Yu
-// USC Student Number: 7623912687
-// EE 450 Project
-// Spring 2022
-
 // serverC.cpp
 // Back-ServerC file for the socket programming project
 
