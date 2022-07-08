@@ -104,7 +104,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // create socket, code used and modified based on beej's guide:
+    // create socket:
     int sockfd, numbytes;
     char buf[MAXDATASIZE];
     struct sockaddr_in serv_addr;
