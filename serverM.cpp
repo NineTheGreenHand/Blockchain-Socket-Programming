@@ -35,7 +35,7 @@ using namespace std;
 #define BACKLOG 10                      // how many pending connections queue will hold
 #define LOGFILE "alichain.txt"          // sorted list of logs based on seq number
 
-// get sockaddr, IPv4 or IPv6: (from beej's guide)
+// get sockaddr, IPv4 or IPv6:
 void *get_in_addr(struct sockaddr *sa) {
     if (sa->sa_family == AF_INET) {
         return &(((struct sockaddr_in*)sa)->sin_addr);
@@ -149,7 +149,6 @@ void sigchld_handler(int s) {
 }
 
 // Initialize a TCP socket with given port number.
-// Code below is modified based on beej's guide:
 int initTCP(const char *port) {
     int sockfd, rv;
     struct addrinfo hints, *servinfo, *p;
@@ -209,7 +208,6 @@ int initTCP(const char *port) {
 } 
 
 // Initialize an UDP socket with given port number.
-// Code below is modified based on beej's guide:
 int initUDP(const char *port) {
     int sockfd, rv;
     struct addrinfo hints, *servinfo, *p;
