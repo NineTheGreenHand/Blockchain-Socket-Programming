@@ -8,7 +8,6 @@ What is this project about:
     the main server connets with backend servers with UDP connection.
     I designed the message format for the messages transfers between the client 
     and main server, and the main server to the backend servers.
-    I did NOT do the bonus part (Phase 4).
 
 What are my code files, and what each one of the does:
     
