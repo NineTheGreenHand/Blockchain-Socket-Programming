@@ -1,12 +1,6 @@
-// EE 450 Project
-// Spring 2022
 // README file
 
-a. Full Name: Sheng Yu
-
-b. Student ID: 7623912687
-
-c. What I have done:
+What is this project about:
 
     I wrote the serverA.cpp, serverB.cpp, serverC.cpp (three backend servers); 
     serverM.cpp (main server); clientA.cpp, clientB.cpp (two clients)
@@ -16,7 +10,7 @@ c. What I have done:
     and main server, and the main server to the backend servers.
     I did NOT do the bonus part (Phase 4).
 
-d. What are my code files, and what each one of the does:
+What are my code files, and what each one of the does:
     
     -- clientA.cpp and clientB.cpp:
 
@@ -58,7 +52,7 @@ d. What are my code files, and what each one of the does:
         all the log entries back to the main server. Will not terminate by itself unless
         manually terminate with "Ctrl + C".
 
-e. Format of all the messages exchanged: (I have a lot of comments made about this in the code files)
+Format of all the messages exchanged: (I have a lot of comments made about this in the code files)
 
     -- Between clientA/B and serverM:
 
@@ -153,7 +147,7 @@ e. Format of all the messages exchanged: (I have a lot of comments made about th
                                                        them with "\n". So later can parse this message 
                                                        by "\n"
 
-g. Idiosyncrasy of my project:
+Idiosyncrasy of my project:
 
     Please start the process with this order: serverX, serverY, serverZ, serverW, clientA, clientB
     (X, Y, Z, W could be A, B, C, M, order does not matter). Start the servers first, or the program
@@ -161,12 +155,3 @@ g. Idiosyncrasy of my project:
     with clientA, then clientB, then clientA, then clientB... The program will not work if this order is
     not followed. For example, if you start clientB first, it will not work. If you do two clientA or clientB
     in a row, it will not work. 
-
-h. The only code I reused is the code to initialize the TCP and UDP socket from Beej's guide provided
-   by the professor. The project allows us to use those code without penalty. The code I used are modified
-   based on the context. I have comments by those code in my code files. Other than that, all code are fully
-   developed and wrote by myself.
-
-i. A side note. For some of the on-screen messages, some of them are not show in the given project description,
-   but they have been addressed on Piazza. I have comment by such messages with the relevant Piazza post number. 
-   Please take a look at the code. All added messages are based on instructors' response on Piazza.
