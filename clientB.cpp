@@ -22,7 +22,7 @@ using namespace std;
 #define PORT "26687"                      // server port number
 #define MAXDATASIZE 10000                 // max number of bytes we can get at once
 
-// get sockaddr, IPv4 or IPv6: (from beej's guide)
+// get sockaddr, IPv4 or IPv6:
 void *get_in_addr(struct sockaddr *sa) {
     if (sa->sa_family == AF_INET) {
         return &(((struct sockaddr_in*)sa)->sin_addr);
@@ -105,7 +105,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // create socket, code used and modified based on beej's guide:
+    // create socket:
     int sockfd, numbytes;
     char buf[MAXDATASIZE];
     struct sockaddr_in serv_addr;
