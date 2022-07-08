@@ -22,7 +22,7 @@ using namespace std;
 #define PORT "25687"                      // server port number
 #define MAXDATASIZE 10000                 // max number of bytes we can get at once
 
-// get sockaddr, IPv4 or IPv6: (from beej's guide)
+// get sockaddr, IPv4 or IPv6:
 void *get_in_addr(struct sockaddr *sa) {
     if (sa->sa_family == AF_INET) {
         return &(((struct sockaddr_in*)sa)->sin_addr);
@@ -74,7 +74,6 @@ void print_message(char *results[], char *argv[]) {
             printf("Unable to proceed with the transaction as \"%s\" and \"%s\" are not part of the network.\n", argv[1], argv[2]);
         }
     }
-    // there is no on-screen message for the TXLIST after the operation is done
 }
 
 int main(int argc, char *argv[]) {
