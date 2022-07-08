@@ -27,7 +27,7 @@ using namespace std;
 #define LOGFILE "block3.txt"    // File that is accessible by ServerC
 #define MAXDATASIZE 10000       // Max data size in byte
 
-// get sockaddr, IPv4 or IPv6: (from beej's guide)
+// get sockaddr, IPv4 or IPv6:
 void *get_in_addr(struct sockaddr *sa) {
     if (sa->sa_family == AF_INET) {
         return &(((struct sockaddr_in*)sa)->sin_addr);
@@ -150,7 +150,7 @@ void write_log(char *log[]) {
 }
 
 int main(void) {
-    // UDP Socket Intialization, code block modified base on Beej's code
+    // UDP Socket Intialization:
     int sockfd, rv, numbytes;
     struct addrinfo hints, *servinfo, *p;
     struct sockaddr_storage their_addr;
