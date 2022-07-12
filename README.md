@@ -1,4 +1,4 @@
-// README file
+To demonstrate my network:
 
 ![alt text](https://github.com/NineTheGreenHand/Blockchain-Socket-Programming/blob/main/Demonstration%20of%20Network.png?raw=true)
 
